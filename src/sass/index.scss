@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './base/normalize';
+@import './base/global';
+
+@import './components/component';
+
