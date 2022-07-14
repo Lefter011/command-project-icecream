@@ -1,5 +1,6 @@
 .products {
-  background-color: $color-white;
+  padding-top: 60px;
+  margin-bottom: 60px;
 }
 
 .top-title__label {
@@ -8,8 +9,22 @@
   font-size: 18px;
   line-height: 1.16;
   text-align: center;
+  @extend %displayFlexCenter;
   text-transform: uppercase;
   color: $color-secondary;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
 }
 
 .top-title {
@@ -21,23 +36,178 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-hover;
+  margin-bottom: 148px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 158px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 281px;
+  }
+}
+
+.products__cards {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 
 .products__item {
-  min-width: 280px;
-  height: 489px;
+  width: 280px;
+  height: 100%;
+  padding-top: 140px;
+  @extend %displayFlexCenter;
+  flex-direction: column;
+  position: relative;
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    padding-top: 90px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    padding-top: 140px;
+  }
+
   &:nth-child(1) {
     background-color: $color-primary;
+    margin-bottom: 140px;
+
     &::before {
       content: '';
-      background-image: url(../src/images/product/products-1_desk-1x.png);
+      background-image: url(..//images/product/products-1_mob-1x.png);
+      width: 280px;
+      height: 280px;
+      background-size: cover;
+      position: absolute;
+      top: -140px;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(..//images/product/products-1_mob-2x.png);
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 224px;
+        background-image: url(..//images/product/products-1_tab-1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(..//images/product/products-1_mob-2x.png);
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 394px;
+        top: -261px;
+        background-image: url(..//images/product/products-1_desk-1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(..//images/product/products-1_mob-2x.png);
+        }
+      }
     }
   }
+
   &:nth-child(2) {
     background-color: $color-cafe;
+    margin-bottom: 140px;
+
+    &::before {
+      content: '';
+      background-image: url(..//images/product/products-2_mob-1x.png);
+      width: 280px;
+      height: 280px;
+      background-size: cover;
+      position: absolute;
+      top: -140px;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(..//images/product/products-2_mob-2x.png);
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 224px;
+        top: -138px;
+        background-image: url(..//images/product/products-2_tab-1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(..//images/product/products-2_tab-2x.png);
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 394px;
+        top: -261px;
+        background-image: url(..//images/product/products-2_desk-1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(..//images/product/products-2_desk-2x.png);
+        }
+      }
+    }
   }
+
   &:nth-child(3) {
     background-color: $color-truck;
+
+    &::before {
+      content: '';
+      background-image: url(..//images/product/products-3_mob-1x.png);
+      width: 280px;
+      height: 280px;
+      background-size: cover;
+      position: absolute;
+      top: -140px;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(..//images/product/products-3_mob-2x.png);
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 224px;
+        top: -138px;
+        background-image: url(..//images/product/products-3_tab-1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(..//images/product/products-3_tab-2x.png);
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 394px;
+        top: -261px;
+        background-image: url(..//images/product/products-3_desk-1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(..//images/product/products-3_desk-2x.png);
+        }
+      }
+    }
   }
 }
 
@@ -52,24 +222,64 @@
   color: $color-white;
   margin-top: 20px;
 
-  &::after {
-    content: '...';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 32px;
-    width: 26px;
-    height: 6px;
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
   }
 }
 
 .products__text {
-  font-style: normal;
   font-weight: 700;
   line-height: 152%;
   text-align: center;
   letter-spacing: 0.04em;
   color: $color-white;
-  margin-top: 32px;
+  margin: 32px 40px;
+
+  @media screen and (min-width: 768px) {
+    line-height: 176%;
+    margin: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin: 32px 62px 62px 62px;
+  }
+
+  &::before {
+    content: '•••';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 32px;
+    width: 26px;
+    height: 6px;
+  }
+}
+
+.products__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: $color-white;
+  margin-bottom: 40px;
+  @extend %animation;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $color-button;
+  }
+
+  &::before {
+    content: '🡪';
+    color: $color-hover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
 }
