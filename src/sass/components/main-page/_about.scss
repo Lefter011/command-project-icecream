@@ -1,0 +1,78 @@
+.about{
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $color-footer;
+
+    @media screen and (min-width: 320px) {
+        min-width: 320px;
+        width: 100%;
+        height: 925px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        .about-big-header{
+            font-size: 34px;
+            line-height: (39/34);
+            letter-spacing: 0.04em;
+            margin-bottom: 32px;
+        }
+        .about-header{
+            font-size: 18px;
+            line-height: (21/18);
+            letter-spacing: 0.04em;
+            margin-bottom: 15px;
+        }
+        .bold-text{
+            width: 220px;
+            font-size: 12px;
+            line-height: 1.62;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        .text{
+            justify-content: center;
+            width: 220px;
+            font-size: 12px;
+            line-height: 1.62;
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.about-header{
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-secondary;
+}
+
+.about-big-header{
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-hover;
+}
+
+.bold-text{
+    font-weight: 500;
+    color: $color-black;
+}
+
+.text{
+    font-weight: 500;
+    color: $color-contact;
+}
