@@ -1,0 +1,75 @@
+.products {
+  background-color: $color-white;
+}
+
+.top-title__label {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-secondary;
+}
+
+.top-title {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-hover;
+}
+
+.products__item {
+  min-width: 280px;
+  height: 489px;
+  &:nth-child(1) {
+    background-color: $color-primary;
+    &::before {
+      content: '';
+      background-image: url(../src/images/product/products-1_desk-1x.png);
+    }
+  }
+  &:nth-child(2) {
+    background-color: $color-cafe;
+  }
+  &:nth-child(3) {
+    background-color: $color-truck;
+  }
+}
+
+.products__title {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-top: 20px;
+
+  &::after {
+    content: '...';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 32px;
+    width: 26px;
+    height: 6px;
+  }
+}
+
+.products__text {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $color-white;
+  margin-top: 32px;
+}
