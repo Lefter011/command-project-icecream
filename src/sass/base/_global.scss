@@ -1,10 +1,10 @@
 body {
-  font-family: $main-font;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  color: $color-black;
-  background-color: $color-white;
-  margin: 0;
+    font-family: $main-font;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $color-black;
+    background-color: $color-white;
+    margin: 0;
 }
 
 ul,
@@ -15,53 +15,52 @@ h4,
 h5,
 h6,
 p {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container-center {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
 
-  @media screen and (min-width: 320px) {
-    max-width: 767px;
-  }
+    @media screen and (min-width: 320px) {
+        min-width: 320px;
+    }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .link,
 .link:hover,
 .link:focus {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
