@@ -1,0 +1,215 @@
+.container-center {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contacts {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__card {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 16px) / 2);
+    margin: 16px;
+  }
+  margin-bottom: 20px;
+  max-width: 280px;
+  height: auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 24px;
+}
+.contacts__card--item {
+  padding-top: 24px;
+}
+.contacts__block--first {
+  max-width: 205px;
+}
+.contacts__block {
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 24px;
+}
+.card__content {
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  padding-left: 32px;
+}
+.contacts__header {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-cafe;
+  width: 80px;
+  height: 18px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contacts__header--item {
+  background-color: $color-truck;
+  width: 130px;
+}
+.contacts__city {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $color-black;
+  margin-bottom: 8px;
+}
+.contacts__text {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-contact;
+  padding-bottom: 24px;
+}
+.contacts__week {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $color-black;
+}
+.contacts__time {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $color-secondary;
+}
+.contacts__tel {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-contact;
+}
+.contacts__mail {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-contact;
+}
+.contacts__tel:hover,
+.contacts__mail:hover,
+.contacts__tel:focus,
+.contacts__mail:focus {
+  color: $color-hover;
+  @extend %animation;
+}
+.contacts__btn {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 12px;
+}
+.contacts__btn--item {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $color-hover;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.contacts__btn--item::after {
+  content: '>';
+  margin-left: 13px;
+}
+.contacts__btn--item:hover,
+.contacts__btn--item:focus {
+  background-color: $color-hover;
+  color: $color-white;
+  @extend %animation;
+}
