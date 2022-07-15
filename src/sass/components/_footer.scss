@@ -1,141 +1,102 @@
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
+.footer {
+  background-color: $color-footer;
+}
 
-  margin-left: auto;
-  margin-right: auto;
+.footer-flex {
+  align-items: baseline;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: $color-border;
+    border: 1px solid $color-border;
+    margin-bottom: 30px;
   }
 }
 
-.footer__button-one {
-  min-width: 198px;
-  height: 44px;
-  color: #ffffff;
-  background: #d41342;
-  border: none;
-  border-radius: 22px;
-  font-family: 'MD Sans';
+.footer__bottom-copy {
+  font-family: $main-font;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  margin: 0;
-  padding: 17px 14px;
+  font-size: 14px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: $color-contact;
+}
+
+.footer__socials-item {
+  width: 34px;
+  height: 34px;
+  margin-right: 37px;
   cursor: pointer;
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 20px;
-    margin-left: 10px;
-  }
-  @media (min-width: 1200px) {
-    margin-top: 2px;
+  &:last-child {
+    margin-right: 0;
   }
 }
 
-.footer__button-two {
-  min-width: 168px;
-  height: 44px;
-  color: #d41443;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 22px;
-  font-family: 'MD Sans';
+.footer__socials-list {
+  display: inline-flex;
+}
+
+.footer__social-link {
+  width: 34px;
+  height: 34px;
+  display: inline;
+  gap: 37px;
+  background-color: $color-social;
+}
+
+.footer__title-text {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-secondary;
+}
+
+.text-accent {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-hover;
+}
+
+.footer__contacts {
+  display: inline-flex;
+}
+
+.footer__contacts-text {
+  font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.3;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  margin: 0;
-  padding: 17px 14px;
-  cursor: pointer;
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 20px;
-    margin-left: 10px;
-    @media (min-width: 1200px) {
-      margin-top: 2px;
-    }
-  }
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: $color-black;
+  padding-right: 5px;
+}
 
-  .footer__bottom-copy {
-    font-family: 'MD Sans';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 186%;
-    letter-spacing: 0.02em;
-    color: #907e82;
-  }
-
-  .footer__social-link {
-    width: 34px;
-    height: 34px;
-    display: inline-flex;
-    border-radius: 50%;
-    background-color: #fea5bb;
-    fill: #ffffff;
-  }
-
-  .footer__title-text {
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffa5ba;
-  }
-
-  .text-accent {
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #d41443;
-  }
-
-  .footer__contacts-text {
-    font-family: 'MD Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 186%;
-    letter-spacing: 0.02em;
-    color: #000000;
-  }
-
-  .footer__contacts-tel {
-    font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 186%;
-    letter-spacing: 0.02em;
-    color: #000000;
-    &:hover,
-    &:focus {
-      color: #d41443;
-    }
-  }
+.footer__contacts-tel {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: $color-hover;
 }
