@@ -5,9 +5,7 @@
 
 .top-title__label {
   font-family: $second-font;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.16;
+  @include font(18px, 400, 1.16, null);
   text-align: center;
   @extend %displayFlexCenter;
   text-transform: uppercase;
@@ -29,11 +27,8 @@
 
 .top-title {
   font-family: $second-font;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.14;
+  @include font(34px, 400, 1.14, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-hover;
   margin-bottom: 148px;
@@ -99,9 +94,7 @@
       position: absolute;
       top: -140px;
       display: block;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(..//images/product/products-1_mob-2x.png);
       }
 
@@ -109,9 +102,7 @@
         width: 224px;
         height: 224px;
         background-image: url(..//images/product/products-1_tab-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(..//images/product/products-1_mob-2x.png);
         }
       }
@@ -121,9 +112,7 @@
         height: 394px;
         top: -261px;
         background-image: url(..//images/product/products-1_desk-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(..//images/product/products-1_mob-2x.png);
         }
       }
@@ -142,9 +131,7 @@
       background-size: cover;
       position: absolute;
       top: -140px;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(..//images/product/products-2_mob-2x.png);
       }
 
@@ -153,9 +140,7 @@
         height: 224px;
         top: -138px;
         background-image: url(..//images/product/products-2_tab-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(..//images/product/products-2_tab-2x.png);
         }
       }
@@ -165,9 +150,7 @@
         height: 394px;
         top: -261px;
         background-image: url(..//images/product/products-2_desk-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(..//images/product/products-2_desk-2x.png);
         }
       }
@@ -185,9 +168,7 @@
       background-size: cover;
       position: absolute;
       top: -140px;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      @include retina {
         background-image: url(..//images/product/products-3_mob-2x.png);
       }
 
@@ -196,9 +177,7 @@
         height: 224px;
         top: -138px;
         background-image: url(..//images/product/products-3_tab-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(..//images/product/products-3_tab-2x.png);
         }
       }
@@ -208,9 +187,7 @@
         height: 394px;
         top: -261px;
         background-image: url(..//images/product/products-3_desk-1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
+        @include retina {
           background-image: url(..//images/product/products-3_desk-2x.png);
         }
       }
@@ -220,11 +197,8 @@
 
 .products__title {
   font-family: $second-font;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
+  @include font(20px, 400, 1.5, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-white;
   margin-top: 20px;
@@ -236,10 +210,8 @@
 }
 
 .products__text {
-  font-weight: 700;
-  line-height: 152%;
+  @include font(null, 700, 152%, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
   color: $color-white;
   margin: 32px 40px;
 
