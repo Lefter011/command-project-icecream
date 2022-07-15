@@ -1,1 +1,60 @@
-<h1>Hello world!</h1>
+<section class="hero" id="hero">
+  <div class="container-center hero__space">
+  <div class="hero__flex">
+    <h1 class="hero__caption">
+      ice cream made with
+      <span class="hero__caption--pink">passion</span>
+    </h1>
+    <ul class="hero-cafes">
+      <li class="hero-cafes__item">
+        <img class="hero__ellipse" src="./images/hero/ellipse.png" alt="">
+        <span class="hero-cafes__number">16</span>
+        <p class="hero-cafes__text">cafes</p>
+        
+        
+      </li>
+      <li class="hero-cafes__item">
+        <img class="hero__ellipse" src="./images/hero/ellipse.png" alt="">
+        <span class="hero-cafes__number">23</span>
+        <p class="hero-cafes__text">food trucks</p>
+        
+      </li>
+    </ul>
+  </div>
+  <ul class="hero__list">
+    <li class="hero__item">
+      <a href="#products" class="hero__btn hero__btn--pink">Products</a>
+    </li>
+    <li class="hero__item">
+      <a href="#about" class="hero__btn hero__btn--white">How it’s made?<a>
+    </li>
+  </ul>
+  <picture>
+  <source media="(min-width: 1200px)" srcset="./images/hero/milk-1x-desk.png 1x, ./images/hero/milk-2x-desk.png 2x" type="image/jpg" />
+  <source media="(min-width: 768px)" srcset="./images/hero/milk-1x-tabl.png 1x, ./images/hero/milk-2x-tabl.png 2x" type="image/jpg" />
+  <img class="hero__milk" src="./images/hero/milk-1x-desk.png" alt="girl eating ice cream" width="213" height="216" />
+</picture>
+  <div class="hero__note">
+    <p class="hero__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+    <button class="hero__btn--arrow" type="button">
+      <svg class="hero__arrow" height="18" width="18">
+        <use href="./images/hero/arrow.svg"></use>
+      </svg>
+    </button>
+  </div>
+  <picture>
+      <source media="(min-width: 1200px)" srcset="./images/hero/hero-ice-cream-1x-desk.png 1x, ./images/hero/hero-ice-cream-2x-desk.png 2x" type="image/jpg" />
+      <source media="(min-width: 768px)" srcset="./images/hero/hero-ice-cream-1x-tabl.png 1x, ./images/hero/hero-ice-cream-2x-tabl.png" type="image/jpg" />
+      <source media="(max-width: 767px)" srcset="./images/hero/hero-ice-cream-1x-mobile.png 1x, ./images/hero/hero-ice-cream-2x-mobile.png 2x" type="image/jpg" />
+      <img class="hero__ice-cream" src="./images/hero/hero-ice-cream-1x-desk.png" alt="ice cream" width="236" height="557" />
+  </picture> 
+  <span class="hero__round"></span>
+  <picture>
+      <source media="(min-width: 1200px)" srcset="./images/hero/girl-1x-desk.png 1x, ./images/hero/girl-2x-desk.png 2x" type="image/jpg"/>
+      <source media="(min-width: 768px)" srcset="./images/hero/girl-1x-tabl.png 1x, ./images/hero/girl-2x-tabl.png 2x" type="image/jpg" />
+      <img class="hero__girl" src="./images/hero/girl-1x-desk.png" alt="girl eating ice cream" width="293" height="232" />
+  </picture>
+  </div>
+</section>
