@@ -25,15 +25,12 @@
         margin-bottom: 0;
     }
 @include for-size (desktop) {
-        max-width: 300px;
+        max-width: 390px;
         margin-bottom: 0;
-       
+        
         &:not(:last-child) {
-            margin-right: 100px;
-        }
-}
-    margin-bottom: 25px;
-
+            margin-right: 50px;
+        }       
 }
 .advantages__card-title {
     font-family: 'Titan One';
@@ -115,7 +112,7 @@
     }
     
     @include for-size (desktop ) {
-   
         font-size: 16px;
     }
+}
 }
