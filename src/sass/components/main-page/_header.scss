@@ -3,7 +3,7 @@
   width: 100%;
   padding-top: 8px;
   padding-top: 8px;
-  background-color: $color-primary;
+  z-index: 100;
 
   @include for-size(tablet) {
     padding-top: 32px;

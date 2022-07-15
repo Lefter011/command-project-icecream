@@ -196,40 +196,45 @@ margin-bottom: 0;
   margin-top: 12px;
 }
 .contacts__btn--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background-color: $color-white;
+
+  margin-bottom: 10px;
+  
+}
+
+.contacts__btn--link {
   font-family: $main-font;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
   color: $color-hover;
+  padding: 0 35px;
   height: 44px;
   border-radius: 22px;
-  background-color: $color-white;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 35px;
+
+  @extend %displayFlexCenter;
+
+  &:hover, &:focus {
+    background-color: $color-hover;
+    color: $color-white;
+    @extend %animation;
+  }
 }
+
 .contacts__btn--item:not(:last-child) {
   margin-right: 15px;
 }
-.contacts__btn--item:hover,
-.contacts__btn--item:focus {
-  background-color: $color-hover;
-  color: $color-white;
-  @extend %animation;
- }
+
 .contacts__svg {
   margin-left: 13px;
-stroke: $color-hover;
-background-color: none;
+  fill: currentColor
 }
-.contacts__svg:hover,
-.contacts__svg:focus {
-stroke: $color-white;
-}
+
 
