@@ -43,10 +43,9 @@
     width: 24px;
     height: 20px;
     margin-left: 10px;
-    background-image: url(../images/icon-arrow.svg);
   }
   @media (min-width: 1200px) {
-    margin-top: ;
+    margin-top: 2px;
   }
 }
 
@@ -75,69 +74,68 @@
     width: 24px;
     height: 20px;
     margin-left: 10px;
-    background-image: url(../images/icon-arrow.svg);
+    @media (min-width: 1200px) {
+      margin-top: 2px;
+    }
   }
-  @media (min-width: 1200px) {
-    margin-top: ;
+
+  .footer__bottom-copy {
+    font-family: 'MD Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #907e82;
   }
-}
 
-.footer__bottom-copy {
-  font-family: 'MD Sans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
-  color: #907e82;
-}
+  .footer__social-link {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    border-radius: 50%;
+    background-color: #fea5bb;
+    fill: #ffffff;
+  }
 
-.footer__social-link {
-  width: 34px;
-  height: 34px;
-  display: inline-flex;
-  border-radius: 50%;
-  background-color: #fea5bb;
-  fill: #ffffff;
-}
+  .footer__title-text {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffa5ba;
+  }
 
-.footer__title-text {
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffa5ba;
-}
-
-.text-accent {
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 1.14;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #d41443;
-}
-
-.footer__contacts-text {
-  font-family: 'MD Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
-.footer__contacts-tel {
-  font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
-  color: #000000;
-  &:hover,
-  &:focus {
+  .text-accent {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: #d41443;
+  }
+
+  .footer__contacts-text {
+    font-family: 'MD Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+
+  .footer__contacts-tel {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
   }
 }
