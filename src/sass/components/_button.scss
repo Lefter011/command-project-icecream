@@ -1,0 +1,28 @@
+.header-button {
+  padding: 12px 0;
+
+  border: none;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  cursor: pointer;
+  background-color: $color-white;
+  color: $color-hover;
+  transition-property: color, background-color;
+
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+    color: $color-white;
+  }
+}
+
+.header-button__icon {
+  margin-left: 14px;
+  fill: currentColor;
+  stroke: currentColor;
+}
