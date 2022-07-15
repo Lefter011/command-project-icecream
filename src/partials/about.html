@@ -1,15 +1,26 @@
 <section class="about">
     <h3 class="about-header">tradition and love</h3>
     <h1 class="about-big-header">how it’s made?</h1>
+    <div>
         <div class="about-img">
-            <picture class="about-pic">
-                <img class="about-pic-cow" src="./images/about/cow-mob.png" alt="">
+            <picture class="about-pic-cow">
+                <source media="(min-width: 320px)" srcset="./images/about/cow-mob.png 1x, ./images/about/cow-mob-x2.png 2x" width="280" heigth="279">
+                <source media="(min-width: 768px)" srcset="./images/about/cow-tab.png 1x, ./images/about/cow-tab-x2.png 2x" width="336" heigth="335">
+                <source media="(min-width: 1200px)" srcset="./images/about/cow.png 1x, ./images/about/cow-x2.png 2x">
+                <img src="./images/about/cow.png" alt="cow" class="cow-img" width="501" heigth="501">
+            </picture>  
+            <picture class="about-pic-milk">
+                <img src="./images/about/milk-mob.png" alt="" class="milk-img">
             </picture>
         </div>
-
+        
         <div class="about-text">
             <p class="bold-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
             <p class="text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.<br><br>Aliquam erat volutpat. Aenean accumsan.
             </p>
-    <button type="button" class="about-button">Read more</button>
+        </div>
+    </div>
+    <button type="button" class="about-button">Read more<svg class="button-svg" width="6" height="10">
+        <use href="./images/about/symbol-defs.svg#icon-arrow"></use>
+      </svg></button>
 </section>
