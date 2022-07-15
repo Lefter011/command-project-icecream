@@ -1,5 +1,5 @@
-import Scrollbar from 'smooth-scrollbar';
+// import Scrollbar from 'smooth-scrollbar';
 
-var options = { damping: 0.05 };
+// var options = { damping: 0.05 };
 
-Scrollbar.init(document.querySelector('#scrollbar'), options);
+// Scrollbar.init(document.querySelector('#scrollbar'), options);
