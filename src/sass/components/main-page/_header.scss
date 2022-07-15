@@ -1,0 +1,81 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 8px;
+  padding-top: 8px;
+  background-color: $color-primary;
+
+  @include for-size(tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    margin-left: 0;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  @include for-size(desktop) {
+    justify-content: space-between;
+  }
+}
+
+.header-button--main {
+  display: none;
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    min-width: 160px;
+    margin-left: 32px;
+  }
+}
+
+.nav-list {
+  display: block;
+
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+.nav-list__item {
+  @media screen and (max-width: 1199px) {
+    border-top: 1px solid #e18298;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
+  }
+  @include for-size(desktop) {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+}
+.nav-list__link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-weight: 700;
+  line-height: 1.28;
+  @extend %animation;
+  transition-property: color;
+  @include for-size(desktop) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  color: $color-white;
+  &:hover,
+  &:focus {
+    color: $color-hover;
+  }
+}
