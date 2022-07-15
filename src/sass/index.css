@@ -296,7 +296,7 @@ img {
 }
 @media screen and (min-width: 320px) {
   .container-center {
-    width: 320px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -331,6 +331,228 @@ img {
 }
 
 .gallery {
-  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .gallery {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.gallery__list-one,
+.gallery__list-two,
+.gallery__list-three,
+.gallery__list-four,
+.gallery__list-five {
+  margin-right: 3px;
+}
+@media screen and (min-width: 480px) {
+  .gallery__list-one,
+.gallery__list-two,
+.gallery__list-three,
+.gallery__list-four,
+.gallery__list-five {
+    margin-right: 3px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__list-one,
+.gallery__list-two,
+.gallery__list-three,
+.gallery__list-four,
+.gallery__list-five {
+    margin-right: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__list-one,
+.gallery__list-two,
+.gallery__list-three,
+.gallery__list-four,
+.gallery__list-five {
+    margin-right: 8px;
+  }
+}
+
+.gallery__list-five {
+  margin-bottom: 30px;
+}
+
+.gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+  max-width: 44px;
+  max-height: 44px;
+}
+@media screen and (min-width: 480px) {
+  .gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+    max-width: 44px;
+    max-height: 44px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+    max-width: 105px;
+    max-height: 105px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+    max-width: 138px;
+    max-height: 138px;
+  }
+}
+
+.gallery__image-four {
+  max-width: 90px;
+  max-height: 90px;
+}
+@media screen and (min-width: 480px) {
+  .gallery__image-four {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__image-four {
+    max-width: 215px;
+    max-height: 215px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__image-four {
+    max-width: 283px;
+    max-height: 283px;
+  }
+}
+
+.gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-four,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+  overflow: hidden;
+  border-radius: 8px;
+}
+@media screen and (min-width: 480px) {
+  .gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-four,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-four,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__image-one,
+.gallery__image-two,
+.gallery__image-three,
+.gallery__image-four,
+.gallery__image-five,
+.gallery__image-six,
+.gallery__image-seven,
+.gallery__image-eight,
+.gallery__image-nine,
+.gallery__image-ten {
+    border-radius: 20px;
+  }
+}
+
+.gallery__image-three,
+.gallery__image-five,
+.gallery__image-seven,
+.gallery__image-nine {
+  margin-top: 3px;
+}
+@media screen and (min-width: 480px) {
+  .gallery__image-three,
+.gallery__image-five,
+.gallery__image-seven,
+.gallery__image-nine {
+    margin-right: 3px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__image-three,
+.gallery__image-five,
+.gallery__image-seven,
+.gallery__image-nine {
+    margin-right: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__image-three,
+.gallery__image-five,
+.gallery__image-seven,
+.gallery__image-nine {
+    margin-right: 8px;
+  }
 }/*# sourceMappingURL=index.css.map */
