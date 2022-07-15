@@ -1,83 +1,65 @@
-<header class="header">
+<header class="header" id="home">
   <div class="container-center header__container">
     <a class="logo link" href="#"
       ><svg class="logo__icon" width="199" height="50">
-        <use href="./images/svg/sprite.svg#logo"></use>
+        <use href="./images/svg/header-sprite.svg#logo"></use>
       </svg>
     </a>
-    <button class="menu-button js-open-menu" type="button">
+
+    <button
+      class="menu-button menu-button--on js-open-menu"
+      type="button"
+      aria-label="mobile menu toggle button"
+      aria-expanded="false"
+      aria-controls="menu-wrap"
+    >
       <svg class="menu-button__icon" width="20" height="12">
-        <use href="./images/svg/sprite.svg#Burger"></use>
+        <use href="./images/svg/header-sprite.svg#Burger"></use>
       </svg>
     </button>
     <div class="menu-wrap js-menu-container">
-      <button class="menu-button menu-button--off js-close-menu" type="button">
-        <svg class="menu-button__icon" width="20" height="12">
-          <use href="./images/svg/sprite.svg#close"></use>
+      <button
+        class="menu-button menu-button--off js-close-menu"
+        type="button"
+        aria-label="mobile menu toggle button"
+        aria-expanded="false"
+        aria-controls="menu-wrap"
+      >
+        <svg class="menu-button__icon" width="14" height="14">
+          <use href="./images/svg/header-sprite.svg#close"></use>
         </svg>
       </button>
       <nav class="nav-menu">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a href="" class="nav-list__link link">Home</a>
+            <a href="#home" class="nav-list__link link">Home</a>
           </li>
           <li class="nav-list__item">
-            <a href="" class="nav-list__link link">About us</a>
+            <a href="#about" class="nav-list__link link">About us</a>
           </li>
           <li class="nav-list__item">
-            <a href="" class="nav-list__link link">How it’s made?</a>
+            <a href="#" class="nav-list__link link">How it’s made?</a>
           </li>
           <li class="nav-list__item">
-            <a href="" class="nav-list__link link">Our products</a>
+            <a href="#products" class="nav-list__link link">Our products</a>
           </li>
           <li class="nav-list__item">
-            <a href="" class="nav-list__link link">Contact</a>
+            <a href="#contacts" class="nav-list__link link">Contact</a>
           </li>
         </ul>
       </nav>
-      <button class="menu-button button" type="button">
+      <button class="header-button menu-wrap__button button" type="button">
         Buy now
-        <svg class="menu-button__icon" width="4" height="8">
-          <use href="./images/svg/sprite.svg#arrow-button"></use>
+        <svg class="header-button__icon" width="8" height="10">
+          <use href="./images/svg/header-sprite.svg#arrow-button"></use>
         </svg>
       </button>
     </div>
-    <button class="header-button button" type="button">
+    <button class="header-button header-button--main button" type="button">
       Buy now
-      <svg class="header-button__icon" width="4" height="8">
-        <use href="./images/svg/sprite.svg#arrow-button"></use>
+      <svg class="header-button__icon" width="8" height="10">
+        <use href="./images/svg/header-sprite.svg#arrow-button"></use>
       </svg>
     </button>
   </div>
-  <script>
-    (() => {
-      const mobileMenu = document.querySelector('.js-menu-container');
-      const openMenuBtn = document.querySelector('.js-open-menu');
-      const closeMenuBtn = document.querySelector('.js-close-menu');
-
-      const toggleMenu = () => {
-        const isMenuOpen =
-          openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-        openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-        mobileMenu.classList.toggle('is-open');
-
-        const scrollLockMethod = !isMenuOpen
-          ? 'disableBodyScroll'
-          : 'enableBodyScroll';
-        bodyScrollLock[scrollLockMethod](document.body);
-      };
-
-      openMenuBtn.addEventListener('click', toggleMenu);
-      closeMenuBtn.addEventListener('click', toggleMenu);
-
-      // Закрываем мобильное меню на более широких экранах
-      // в случае изменения ориентации устройства.
-      window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-        if (!e.matches) return;
-        mobileMenu.classList.remove('is-open');
-        openMenuBtn.setAttribute('aria-expanded', false);
-        bodyScrollLock.enableBodyScroll(document.body);
-      });
-    })();
-  </script>
 </header>

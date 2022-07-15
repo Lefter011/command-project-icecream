@@ -1,13 +1,13 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="arrow-button" viewBox="0 0 26 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
+<path fill="none"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
 </symbol>
 <symbol id="Burger" viewBox="0 0 46 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
 </symbol>
 <symbol id="close" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.518 2l26.963 28M2 29.481l28-26.963"></path>
+<path fill="none"  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.518 2l26.963 28M2 29.481l28-26.963"></path>
 </symbol>
 <symbol id="logo" viewBox="0 0 127 32">
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M31.36 16.32c0 8.66-6.877 15.68-15.36 15.68s-15.36-7.020-15.36-15.68c0-8.66 6.877-15.68 15.36-15.68s15.36 7.020 15.36 15.68z"></path>
