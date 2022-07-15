@@ -77,3 +77,14 @@
     font-weight: 500;
     color: $color-contact;
 }
+
+.about-img{
+    position: relative;
+}
+
+.about-text{
+    position: absolute;
+    background-image: url(../images/about/milk-mob.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
