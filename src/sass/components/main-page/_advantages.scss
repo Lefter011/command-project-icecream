@@ -10,6 +10,9 @@
     @include for-size (tablet) {
         padding-top: 60px;
         padding-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
     }
 
     @include for-size (desktop) {
