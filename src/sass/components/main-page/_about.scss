@@ -6,6 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: $color-footer;
+    overflow: hidden;
 
     @media screen and (min-width: 320px) {
         min-width: 320px;
@@ -15,6 +16,10 @@
         padding-bottom: 40px;
         padding-left: 20px;
         padding-right: 20px;
+        .cow-img{
+            width: 280px;
+            height: 279px;
+        }
         .about-big-header{
             position: relative;
             font-size: 34px;
@@ -34,6 +39,8 @@
             line-height: 1.62;
             text-align: left;
             margin-bottom: 40px;
+            letter-spacing: initial;
+
         }
         .text{
             justify-content: center;
@@ -41,11 +48,16 @@
             font-size: 12px;
             line-height: 1.62;
             text-align: left;
+            letter-spacing: initial;
+
         }
         .about-img{
             display:inline-block;
-            justify-content: center;
             margin-bottom: 30px;
+            position: relative;
+        }
+        .about-text{
+            position: absolute;
         }
         .about-pic-milk{
             position: absolute;
@@ -53,13 +65,122 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: 619px;
+        .about-section{
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-header{
+            letter-spacing: 0.04em;
+            margin-bottom: 16px;
+            font-size: 26px;
+            line-height: (30/26);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .about-big-header{
+            position: relative;
+            font-size: 48px;
+            line-height: (55/48);
+            margin-bottom: 32px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .cow-img{
+            width: 336px;
+            height: 335px;
+        }
+        // .about-pic-milk{
+        //     display: none;
+        // }
+        .about-content{
+            display: flex;
+        }
+        .about-text{
+            margin-left: 400px;
+        }
+        .text{
+            font-size: 14px;
+            line-height: 1.76;
+            width: 334px;
+            letter-spacing: 0.04;
+        }
+        .bold-text{
+            font-size: 14px;
+            line-height: 1.76;
+            width: 334px;
+            letter-spacing: 0.04;
+        }
+        .about-button{
+            margin-top: 32px;
+            margin-left: auto;
+            margin-right: 192px;
+        }
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: 797px;
+        .cow-img{
+            width: 501px;
+            height: 501px;
+            margin-right: 99px;
+        }
+        .milk-img{
+            position: absolute;
+            width: 100%;
+        }
+        .about-section{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-header{
+            letter-spacing: 0.04em;
+            margin-bottom: 16px;
+            font-size: 30px;
+            line-height: (34/30);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .about-big-header{
+            font-size: 58px;
+            line-height: (66/58);
+            letter-spacing: 0.04em;
+            margin-bottom: 60px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .about-text{
+            top:326px;
+            left: 616px;
+        }
+        .bold-text{
+            font-size: 16px;
+            line-height: 1.76;
+            width: 463px;
+            letter-spacing: initial;
+        }
+        .text{
+            font-size: 16px;
+            line-height: 1.76;
+            width: 463px;
+            letter-spacing: initial;
+        }
+        .about-button{
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: 408px;
+        }
+}
 }
 
 .about-header{
