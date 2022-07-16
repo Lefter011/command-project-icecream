@@ -8,7 +8,7 @@
     background-color: $color-footer;
     overflow: hidden;
 
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
         min-width: 320px;
         width: 100%;
         height: 925px;
@@ -16,24 +16,39 @@
         padding-bottom: 40px;
         padding-left: 20px;
         padding-right: 20px;
-        .cow-img{
+        .container-img__cow-img{
             width: 280px;
             height: 279px;
         }
-        .about-big-header{
-            position: relative;
+        .about-section__header{
             font-size: 34px;
             line-height: (39/34);
             letter-spacing: 0.04em;
             margin-bottom: 32px;
         }
-        .about-header{
+        .about-section__logo{
+            display: flex;
+            justify-content: center;
             font-size: 18px;
             line-height: (21/18);
             letter-spacing: 0.04em;
             margin-bottom: 15px;
         }
-        .bold-text{
+        .container-img{
+            position: absolute;
+            top: 204px;
+        }
+        .container-img__picture-1{
+            margin-bottom: 111px;
+        }
+        .container-img__picture-2{
+            width: 280px;
+        }
+        .container-text{
+            position: absolute;
+            top:523px;
+        }
+        .container-text__bold{
             width: 220px;
             font-size: 12px;
             line-height: 1.62;
@@ -42,26 +57,13 @@
             letter-spacing: initial;
 
         }
-        .text{
+        .container-text__normal{
             justify-content: center;
             width: 220px;
             font-size: 12px;
             line-height: 1.62;
             text-align: left;
             letter-spacing: initial;
-
-        }
-        .about-img{
-            display:inline-block;
-            margin-bottom: 30px;
-            position: relative;
-        }
-        .about-text{
-            position: absolute;
-        }
-        .about-pic-milk{
-            position: absolute;
-            margin-top: 111px;
         }
     }
 
@@ -75,15 +77,16 @@
             margin-left: auto;
             margin-right: auto;
         }
-        .about-header{
+        .about-section__logo{
+            display: flex;
+            justify-content: center;
             letter-spacing: 0.04em;
             margin-bottom: 16px;
             font-size: 26px;
             line-height: (30/26);
-            text-align: center;
             text-transform: uppercase;
         }
-        .about-big-header{
+        .about-section__header{
             position: relative;
             font-size: 48px;
             line-height: (55/48);
@@ -92,30 +95,38 @@
             text-transform: uppercase;
             margin-bottom: 40px;
         }
-        .cow-img{
+        .container-img{
+            top:201px;
+            left: 32px;
+        }
+        .container-img__cow-img{
             width: 336px;
             height: 335px;
         }
-        // .about-pic-milk{
-        //     display: none;
-        // }
-        .about-content{
-            display: flex;
+        .container-img__picture-2{
+            margin-bottom: 0;        }
+        .container-img__picture-2{
+            display: none;
         }
-        .about-text{
+        .container-text{
+            position: absolute;
+            top: 201px;
             margin-left: 400px;
         }
-        .text{
+        .container-text__normal{
             font-size: 14px;
             line-height: 1.76;
             width: 334px;
+            height: 155px;
             letter-spacing: 0.04;
         }
-        .bold-text{
+        .container-text__bold{
             font-size: 14px;
             line-height: 1.76;
             width: 334px;
+            height: 79px;
             letter-spacing: 0.04;
+            margin-bottom: 40px;
         }
         .about-button{
             margin-top: 32px;
@@ -129,21 +140,30 @@
         padding-bottom: 60px;
         width: 100%;
         height: 797px;
-        .cow-img{
+        // .about-section{
+        //     width: 1200px;
+        //     margin-left: auto;
+        //     margin-right: auto;
+        // .container-img{
+        //     position: absolute;
+        // }
+        .container-img__cow-img{
             width: 501px;
             height: 501px;
             margin-right: 99px;
         }
-        .milk-img{
+        .container-img{
             position: absolute;
-            width: 100%;
-        }
-        .about-section{
             width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
+            top: 236px;
         }
-        .about-header{
+        .container-img__picture-2{
+            position: absolute;
+            top: 0;
+        }
+        .about-section__logo{
+            display: flex;
+            justify-content: center;
             letter-spacing: 0.04em;
             margin-bottom: 16px;
             font-size: 30px;
@@ -151,7 +171,7 @@
             text-align: center;
             text-transform: uppercase;
         }
-        .about-big-header{
+        .about-section__header{
             font-size: 58px;
             line-height: (66/58);
             letter-spacing: 0.04em;
@@ -159,39 +179,42 @@
             text-align: center;
             text-transform: uppercase;
         }
-        .about-text{
+        .container-text{
+            position: absolute;
             top:326px;
             left: 616px;
         }
-        .bold-text{
+        .container-text__bold{
+            margin-bottom: 32px;
             font-size: 16px;
             line-height: 1.76;
             width: 463px;
+            height: 79px;
             letter-spacing: initial;
         }
-        .text{
+        .container-text__normal{
             font-size: 16px;
             line-height: 1.76;
             width: 463px;
+            height: 155px;
             letter-spacing: initial;
+            margin-bottom: 40px;
         }
         .about-button{
-            margin-top: 40px;
             margin-left: auto;
             margin-right: 408px;
         }
 }
 }
 
-.about-header{
+.about-section__logo{
     font-family: 'Titan One';
     font-weight: 400;
-    text-align: center;
     text-transform: uppercase;
     color: $color-secondary;
 }
 
-.about-big-header{
+.about-section__header{
     font-family: 'Titan One';
     font-weight: 400;
     text-align: center;
@@ -199,12 +222,12 @@
     color: $color-hover;
 }
 
-.bold-text{
+.container-text__bold{
     font-weight: 500;
     color: $color-black;
 }
 
-.text{
+.container-text__normal{
     font-weight: 500;
     color: $color-contact;
 }
