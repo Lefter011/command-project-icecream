@@ -15,7 +15,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("item");
+  var slides = document.getElementsByClassName("reviews-item");
   var dots = document.getElementsByClassName("slider-dots_item");
   if (n > slides.length) {
     slideIndex = 1

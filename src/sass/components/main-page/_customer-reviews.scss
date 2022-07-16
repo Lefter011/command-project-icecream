@@ -6,11 +6,7 @@
   margin-bottom: 15px;
 }
 
-.slider .item img {
- object-fit: cover;
-  width: 84px;
-  height: 84px;
-}
+
 
 .slider .prev, .slider .next {
   cursor: pointer;
@@ -52,12 +48,13 @@
   background-color: #aaa;
 }
 
-.slider .item {
+.slider .reviews-item {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 
 @-webkit-keyframes fade {
   from {
@@ -75,98 +72,45 @@
   to {
     opacity: 1
   }
+  
 }
 
 
-// .reviews-container {    
-//         max-width: 1000px;
-//         position: relative;
-//         margin: auto;
-//         height: 500px;
-// }
+.reviews-item_foto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-// .reviews-item {
-//     display: none;
-// }
+.reviews-item_text {
+  margin-left: auto;  
+  margin-right: auto;
+  text-align: center;
+width: 700px;
+font-weight: 500;
+font-size: 14px;
+line-height: 2.16;
+text-align: center;
+letter-spacing: 0.04em;
 
-// .fade {
-//     animation-name: fade;
-//     animation-duration: 1.5s;
-//   }
+color: #000000;
+}
 
-// //   @keyframes fade {
-// //     from {opacity: .4}
-// //     to {opacity: 1}
-// //   }
-  
+.reviews-item_text::before {
+  background-image: url(../images/reviews/slide2.jpg);
+  margin-right: 5px;
+}
 
-// .reviews-item_img {
-//     width: 84px;
-//     height: 84px;
-//     border-radius: 50%;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-// .reviews-item_text {
-//     font-family: 'DM Sans';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 14px;
-// line-height: 2.16;
-// text-align: center;
-// letter-spacing: 0.04em;
-
-// color: #000000;
-// }
-
-// .reviews-item_author {
-//     font-family: 'DM Sans';
-// font-style: normal;
-// font-weight: 500;
-// font-size: 16px;
-// line-height: 1.86;
-// text-align: center;
-
-// color: #000000;
-// }
-
-// .dot {
-//     cursor: pointer;
-//     height: 15px;
-//     width: 15px;
-//     margin: 0 2px;
-//     background-color: #bbb;
-//     border-radius: 50%;
-//     display: inline-block;
-//     transition: background-color 0.6s ease;
-//   }
-
-
+.reviews-item_author {
+  margin-left: auto;  
+  margin-right: auto;
  
-//   /* Next & previous buttons */
-// .prev, .next {
-//     cursor: pointer;
-//     position: absolute;
-//     top: 50%;
-//     width: auto;
-//     margin-top: -22px;
-//     padding: 16px;
-//     color: red;
-//     font-weight: bold;
-//     font-size: 18px;
-//     transition: 0.6s ease;
-//     border-radius: 0 3px 3px 0;
-//     user-select: none;
-//   }
-  
-//   /* Position the "next button" to the right */
-//   .next {
-//     right: 0;
-//     border-radius: 3px 0 0 3px;
-//   }
-  
-//   /* On hover, add a black background color with a little bit see-through */
-//   .prev:hover, .next:hover {
-//     background-color: rgba(0,0,0,0.8);
-//   }
+font-weight: 500;
+font-size: 16px;
+line-height: 1.86;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+}
