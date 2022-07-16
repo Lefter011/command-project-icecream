@@ -2,6 +2,10 @@
   background-color: $color-footer;
 }
 
+.container-center {
+  margin-top: 544px;
+}
+
 .footer-flex {
   align-items: baseline;
   display: inline-flex;
@@ -15,15 +19,18 @@
   text-transform: uppercase;
   color: $color-secondary;
   @media (max-width: 767px) {
+    width: 232px;
     font-size: 18px;
     line-height: 1.17;
   }
   @media (min-width: 768px) {
+    width: 340px;
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
   @media (min-width: 1200px) {
+    width: 472px;
     font-size: 30px;
     line-height: 1.14;
     letter-spacing: 0.04em;
@@ -38,14 +45,17 @@
   font-weight: 400;
   line-height: 1.14;
   @media (max-width: 767px) {
+    width: 232px;
     font-size: 34px;
     letter-spacing: 0.04em;
   }
   @media (min-width: 768px) {
+    width: 340px;
     font-size: 48px;
     letter-spacing: 0.06em;
   }
   @media (min-width: 1200px) {
+    width: 480px;
     font-size: 58px;
     letter-spacing: 0.06em;
   }
