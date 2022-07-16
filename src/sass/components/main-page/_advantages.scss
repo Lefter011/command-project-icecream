@@ -1,14 +1,18 @@
-.advantages__container {
+.advantages {
     background-color: $color-footer;
 }
 .advatages__list {
     padding-top: 40px;
     padding-bottom: 60px;
+    @extend %displayFlexCenter;
+    flex-direction: column;
 
     @include for-size (tablet) {
-        display: flex;
         padding-top: 60px;
         padding-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
     }
 
     @include for-size (desktop) {
