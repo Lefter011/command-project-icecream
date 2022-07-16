@@ -254,12 +254,17 @@
   align-items: center;
   justify-content: center;
   transform: translate(0) rotate(0);
+  @extend %animation;
 
   &.active {
-    transform: translateY(-20px) translateX(20px) rotate(270deg);
+    &__cream,
+    &__coffee,
+    &__milkshakes {
+      transform: translateY(-20px) translateX(20px) rotate(270deg);
 
-    @media screen and (min-width: 1200px) {
-      transform: translateY(-30px) translateX(30px) rotate(270deg);
+      @media screen and (min-width: 1200px) {
+        transform: translateY(-30px) translateX(30px) rotate(270deg);
+      }
     }
   }
 }
