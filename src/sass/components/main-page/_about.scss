@@ -1,4 +1,4 @@
-.about{
+.container-center{
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
@@ -20,6 +20,12 @@
             width: 280px;
             height: 279px;
         }
+        .about-section__header{
+            font-size: 34px;
+            line-height: (39/34);
+            letter-spacing: 0.04em;
+            margin-bottom: 32px;
+        }
         .about-section__logo{
             display: flex;
             justify-content: center;
@@ -28,13 +34,7 @@
             letter-spacing: 0.04em;
             margin-bottom: 15px;
         }
-        .about-section__header{
-            font-size: 34px;
-            line-height: (39/34);
-            letter-spacing: 0.04em;
-            margin-bottom: 32px;
-        }
-        .about-content__img{
+        .container-img{
             position: absolute;
             top: 204px;
         }
@@ -44,7 +44,7 @@
         .container-img__picture-2{
             width: 280px;
         }
-        .about-content__text{
+        .container-text{
             position: absolute;
             top:523px;
         }
@@ -95,7 +95,7 @@
             text-transform: uppercase;
             margin-bottom: 40px;
         }
-        .container-img__picture-1{
+        .container-img{
             top:201px;
             left: 32px;
         }
@@ -106,7 +106,7 @@
         .container-img__picture-2{
             display: none;
         }
-        .about-content__text{
+        .container-text{
             position: absolute;
             top: 201px;
             margin-left: 400px;
@@ -172,9 +172,10 @@
         }
         .container-img__picture-2{
             position: absolute;
-            top: 236px;
+            top: 0;
         }
-        .about-content__text{
+        .container-text{
+            margin-left: 616px;
             margin-top: 90px;
             z-index: 1;
         }
@@ -236,7 +237,6 @@
     background: $color-white;
     border-radius: 22px;
     padding: 0;
-    margin-top: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: (18/14);
