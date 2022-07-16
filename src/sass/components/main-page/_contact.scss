@@ -220,7 +220,7 @@ margin-right: 16px;
 
   @extend %displayFlexCenter;
 
-  &:hover, &:focus {
+  &:active, &:hover, &:focus {
     background-color: $color-hover;
     color: $color-white;
     @extend %animation;
@@ -233,12 +233,6 @@ margin-right: 16px;
   @media screen and (max-width: 768px) {
     margin-right: 0;
   }
-}
-
-.contacts__svg {
-  margin-left: 13px;
-  fill: currentColor;
-  stroke: currentColor;
 }
 
 
