@@ -1,0 +1,252 @@
+.container-center{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $color-footer;
+    overflow: hidden;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        min-width: 320px;
+        width: 100%;
+        height: 925px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        .container-img__cow-img{
+            width: 280px;
+            height: 279px;
+        }
+        .about-section__header{
+            font-size: 34px;
+            line-height: (39/34);
+            letter-spacing: 0.04em;
+            margin-bottom: 32px;
+        }
+        .about-section__logo{
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            line-height: (21/18);
+            letter-spacing: 0.04em;
+            margin-bottom: 15px;
+        }
+        .container-img{
+            position: absolute;
+            top: 204px;
+        }
+        .container-img__pic-1{
+            margin-bottom: 111px;
+        }
+        .container-img__pic-2{
+            width: 280px;
+        }
+        .container-text{
+            position: absolute;
+            top:523px;
+        }
+        .container-text__bold{
+            width: 220px;
+            font-size: 12px;
+            line-height: 1.62;
+            text-align: left;
+            margin-bottom: 40px;
+            letter-spacing: initial;
+
+        }
+        .container-text__normal{
+            justify-content: center;
+            width: 220px;
+            font-size: 12px;
+            line-height: 1.62;
+            text-align: left;
+            letter-spacing: initial;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: 619px;
+        .about-section{
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-section__logo{
+            display: flex;
+            justify-content: center;
+            letter-spacing: 0.04em;
+            margin-bottom: 16px;
+            font-size: 26px;
+            line-height: (30/26);
+            text-transform: uppercase;
+        }
+        .about-section__header{
+            position: relative;
+            font-size: 48px;
+            line-height: (55/48);
+            margin-bottom: 32px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .container-img{
+            top:201px;
+            left: 32px;
+        }
+        .container-img__cow-img{
+            width: 336px;
+            height: 335px;
+        }
+        .container-img__pic-2{
+            display: none;
+        }
+        .container-text{
+            position: absolute;
+            top: 201px;
+            margin-left: 400px;
+        }
+        .container-text__normal{
+            font-size: 14px;
+            line-height: 1.76;
+            width: 334px;
+            height: 155px;
+            letter-spacing: 0.04;
+            margin-bottom: 40px;
+        }
+        .container-text__bold{
+            font-size: 14px;
+            line-height: 1.76;
+            width: 334px;
+            height: 79px;
+            letter-spacing: 0.04;
+            margin-bottom: 40px;
+        }
+        .about-button{
+            margin-left: auto;
+            margin-right: 192px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: 797px;
+        .about-content{
+            display: flex;
+            justify-content: center;
+        }
+        .about-section__logo{
+            display: flex;
+            justify-content: center;
+            letter-spacing: 0.04em;
+            margin-bottom: 16px;
+            font-size: 30px;
+            line-height: (34/30);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .about-section__header{
+            font-size: 58px;
+            line-height: (66/58);
+            letter-spacing: 0.04em;
+            margin-bottom: 60px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .container-img__cow-img{
+            width: 501px;
+            height: 501px;
+            margin-right: 99px;
+        }
+        .container-img{
+            position: absolute;
+            width: 1200px;
+            top: 236px;
+        }
+        .container-img__pic-2{
+            position: absolute;
+            top: 0;
+        }
+        .container-text{
+            margin-left: 616px;
+            margin-top: 90px;
+            z-index: 1;
+        }
+        .container-text__bold{
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 1.76;
+            width: 463px;
+            height: 79px;
+            letter-spacing: initial;
+        }
+        .container-text__normal{
+            font-size: 16px;
+            line-height: 1.76;
+            width: 463px;
+            height: 155px;
+            letter-spacing: initial;
+            margin-bottom: 40px;
+        }
+        .about-button{
+            margin-left: auto;
+            margin-right: 408px;
+        }
+}
+}
+
+.about-section__logo{
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-secondary;
+}
+
+.about-section__header{
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-hover;
+}
+
+.container-text__bold{
+    font-weight: 500;
+    color: $color-black;
+}
+
+.container-text__normal{
+    font-weight: 500;
+    color: $color-contact;
+}
+
+.about-button{
+    cursor: pointer;
+    width: 176px;
+    height: 44px;
+    left: 20px;
+    top: 3432px;
+    border: transparent;
+    background: $color-white;
+    border-radius: 22px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: (18/14);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $color-hover;
+    padding-left: 37px;
+    }
+
+    .button-svg{
+        margin-left: 14px;
+    }
