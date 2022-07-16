@@ -1,0 +1,122 @@
+.advantages {
+    background-color: $color-footer;
+}
+.advatages__list {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    @extend %displayFlexCenter;
+    flex-direction: column;
+
+    @include for-size (tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    @include for-size (desktop) {
+        padding-top: 40px;
+        padding-bottom: 120px;
+    }
+}
+.advantages__card {
+    max-width: 230px;
+    margin-bottom: 25px;
+
+@include for-size (tablet) {
+        max-width: 190px;
+        margin-bottom: 0;
+    }
+@include for-size (desktop) {
+        max-width: 390px;
+        margin-bottom: 0;
+        
+        &:not(:last-child) {
+            margin-right: 50px;
+        }       
+}
+.advantages__card-title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $color-hover;
+
+    max-width: 98px;
+
+    margin-bottom: 4px;
+
+    @include for-size (tablet) {
+        font-size: 48px;
+        line-height: 1.15;
+        margin-bottom: 13px;
+    }
+
+    @include for-size (desktop) {
+        font-size: 58px;
+        line-height: 1.14;
+        margin-bottom: 16px;
+    }
+
+}
+.card-title-1::before {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 50px;
+
+    background-image: url("/src/images/svg/advantages/logo-1.png");
+
+}
+.card-title-2::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-image: url("/src/images/svg/advantages/logo-2.png");
+}
+.card-title-3::before {
+    content: "";
+    display: block;
+    width: 45.5px;
+    height: 50px;
+
+    background-image: url("/src/images/svg/advantages/logo-3.png");
+}
+.advantages__card-title::before {
+    margin-bottom: 16px;
+    @include for-size (tablet) {
+        margin-bottom: 36px;
+    }
+    
+    @include for-size (desktop) {
+        margin-bottom: 40px;
+    }
+}
+
+
+.advantages__card-text {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+
+   
+
+    @include for-size (tablet) {
+        font-size: 14px;
+        line-height: 1.74;
+    }
+    
+    @include for-size (desktop ) {
+        font-size: 16px;
+    }
+}
+}
