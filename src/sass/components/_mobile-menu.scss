@@ -22,8 +22,8 @@
 
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     padding-top: 60px;
     transform: translateX(-100%);
     opacity: 0;
@@ -35,10 +35,13 @@
   @include for-size(desktop) {
     display: flex;
   }
+
+    
 }
 .menu-wrap.is-open {
   transform: translateX(0);
   opacity: 1;
+  
 }
 
 .menu-button--on {
