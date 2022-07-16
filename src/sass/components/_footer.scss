@@ -9,28 +9,52 @@
 }
 
 .footer__title-text {
+  margin-bottom: 16px;
   font-family: $second-font;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-secondary;
-  margin-bottom: 16px;
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
 }
 
 .text-accent {
-  font-family: $second-font;
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 1.14;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: $color-hover;
   margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: $second-font;
+  font-weight: 400;
+  line-height: 1.14;
+  @media (max-width: 767px) {
+    font-size: 34px;
+    letter-spacing: 0.04em;
+  }
+  @media (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+  @media (min-width: 1200px) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .footer__socials {
+  @media (min-width: 768px) {
+    margin-top: -140px;
+  }
 }
 
 .footer__socials-list {
@@ -71,21 +95,36 @@
   margin-left: auto;
   font-family: $main-font;
   font-weight: 700;
-  font-size: 16px;
   line-height: 186%;
-  letter-spacing: 0.02em;
-  color: $color-black;
   padding-right: 5px;
+  color: $color-black;
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer__contacts-tel {
   font-family: $main-font;
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
   line-height: 186%;
-  letter-spacing: 0.02em;
   color: $color-hover;
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer__bottom {
@@ -113,16 +152,27 @@
   font-family: $main-font;
   font-weight: 700;
   font-size: 14px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
   color: $color-contact;
+  margin-right: 5px;
+  @media (max-width: 767px) {
+    line-height: 152%;
+  }
+  @media (min-width: 768px) {
+    line-height: 186%;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer__bottom-all {
   font-family: $main-font;
   font-weight: 700;
   font-size: 14px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
   color: $color-contact;
+  @media (max-width: 767px) {
+    line-height: 152%;
+  }
+  @media (min-width: 768px) {
+    line-height: 186%;
+    letter-spacing: 0.02em;
+  }
 }
