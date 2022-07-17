@@ -218,22 +218,14 @@
   background-color: $color-hover;
   color: $color-white;
 }
-
 .contacts__btn--active-hover:active, 
 .contacts__btn--active-hover:hover, 
 .contacts__btn--active-hover:focus {
   background-color: $color-button;
   @extend %animation;
 }
-
-
-
 .contacts__btn--item:not(:last-child) {
   margin-right: 15px;
-
-  @media screen and (max-width: 768px) {
-    margin-right: 0;
-  }
 }
 
 .contacts__svg {
