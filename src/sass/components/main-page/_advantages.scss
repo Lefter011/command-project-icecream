@@ -7,15 +7,12 @@
     flex-direction: column;
 
     @include for-size (tablet) {
-  
         padding-bottom: 60px;
-      
         flex-direction: row;
         justify-content: left;
     }
 
     @include for-size (desktop) {
-  
         padding-bottom: 120px;
     }
 }
@@ -47,7 +44,7 @@
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
-
+    text-transform: uppercase;
 
     color: $color-hover;
 
@@ -56,6 +53,7 @@
     margin-bottom: 4px;
 
     @include for-size (tablet) {
+        text-transform:none;
         font-size: 48px;
         line-height: 1.15;
         margin-bottom: 13px;
@@ -65,11 +63,7 @@
         font-size: 58px;
         line-height: 1.14;
         margin-bottom: 16px;
-    }
-    // &:hover {
-    //     transform: scale(1.2);
-    //     color: tomato;
-    // }        
+    }    
 }
 
 .card-title-1::before {
