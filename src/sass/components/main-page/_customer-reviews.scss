@@ -95,7 +95,7 @@
 }
 
 .reviews-item_text-desc {
-background: repeating-linear-gradient(#ffffffff, #ffffffff 32px, #E1E1E1 33px, #E1E1E1 34px);
+background: repeating-linear-gradient(#ffffffff, #ffffffff 34px, #E1E1E1 35px, #E1E1E1 36px);
   margin-left: auto;  
   margin-right: auto;
   justify-content: center;
@@ -115,8 +115,7 @@ margin-bottom: 30px;
 
 .reviews-item_text::after {  
   content: ""; 
-  margin-left: 50%;  
-
+  margin-left: 49%;
   width: 32px;
   height: 4px;  
   background-size: contain;
