@@ -76,38 +76,27 @@
 }
 
 .hero-cafes__item {
-position: relative;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 18px;
+    margin-bottom: 18px;
 }
 
 .hero-cafes__number {
-font-family: $second-font;
-font-size: 28px;
-z-index: 5;
-line-height: calc(32 / 28);
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #D41443;
-@media screen and (min-width: 1200px) {
-    font-size: 46px;
-    line-height: calc(53 / 46);
+    font-family: $second-font;
+    font-size: 28px;
+    z-index: 5;
+    line-height: calc(32 / 28);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: calc(53 / 46);
     }
-&::before{
-    width: 16px;
-    height: 16px;
-    content: "";
-    display: block;
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    right: 4px;
-    border-radius: 50%;
-    background-color: #fff;
-        @media screen and (min-width: 1200px) {
-                right: 10px;
-                width: 30px;
-                height: 30px;
-            }
-}
 }
 
 .hero-cafes__text {
@@ -120,15 +109,27 @@ color: #D41443;
         line-height: calc(18 / 14);
     }
 }
-// .hero__ellipse{
-//     background-color: #fff;
-//     border-radius: 50%;
-//     position: absolute;
-//     top: 0px;
-//     right: 4px;
-//     z-index: 1;
 
-// }
+.hero__ellipse{
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        width: 16px; 
+        height: 16px;
+        top: -3px;
+        right: -5px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+        top: -5px;
+        right: -12px;
+    }
+}
+
 .hero__list {
     display: flex;
     gap: 12px;
@@ -166,6 +167,8 @@ z-index: 3;
         width: 83px;
         color: #D41443;
         background-color: #fff;
+        @extend %animation;
+        transition-property: background-color;
         @media screen and (min-width: 1200px) {
                 width: 138px;
                 font-size: 14px;
@@ -265,20 +268,41 @@ bottom: 16px;
 }
 .hero__btn--arrow {
     background-color: #FFFFFF;
+    @extend %animation;
+    transition-property: background-color;
     fill: #D41443;
     border-radius: 50%;
     cursor: pointer;
     border: none;
     margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover, &:focus{
+        background-color: #ECEBEB;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 18px;
+        height: 18px;
+        font-size: 0.6rem;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 26px;
         height: 26px;
         margin-top: 20px;
+        font-size: 0.8rem;
+    }
+
+    &::before {
+        content: '🡪';
+        color: $color-hover;
     }
 }
 .hero__arrow {
     fill: #D41443;
+    stroke: #D41443;
 }
 .hero__round{
     width: 346px;
