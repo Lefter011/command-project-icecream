@@ -98,6 +98,7 @@
 background: repeating-linear-gradient(#ffffffff, #ffffffff 32px, #E1E1E1 33px, #E1E1E1 34px);
   margin-left: auto;  
   margin-right: auto;
+  justify-content: center;
   text-align: center;
 width: 800px;
 font-weight: 500;
@@ -112,17 +113,19 @@ color: #000000;
 margin-bottom: 30px;
 }
 
-.reviews-item_text::after {
-  
-  content: "";  
- margin-right: 10px;
-  width: 40px;
-  height: 10px;
-  
+.reviews-item_text::after {  
+  content: ""; 
+  margin-left: 50%;  
+
+  width: 32px;
+  height: 4px;  
   background-size: contain;
   display: inline-block;
- background-image: url(../images/reviews/ellipse.png); 
-
+ background-image: url(../images/reviews/ellipse.png), url(../images/reviews/ellipse.png), url(../images/reviews/ellipse.png); 
+ background-size: 4px, 4px, 4px;
+  background-repeat: no-repeat;
+  background-position: top 0 right 0, top 0 left 0, top 0 center;
+   
 }
 
 .reviews-item_text-desc::before {
@@ -150,10 +153,6 @@ letter-spacing: 0.04em;
 color: #000000;
 }
 
-// .reviews-item_icon {
-//   display: block;
-//   fill: #7c7676;
-  
- 
+
  
 
