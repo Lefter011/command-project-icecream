@@ -2,13 +2,12 @@
     background-color: $color-footer;
 }
 .advatages__list {
-    padding-top: 40px;
     padding-bottom: 60px;
     @extend %displayFlexCenter;
     flex-direction: column;
 
     @include for-size (tablet) {
-        padding-top: 60px;
+  
         padding-bottom: 60px;
       
         flex-direction: row;
@@ -16,21 +15,26 @@
     }
 
     @include for-size (desktop) {
-        padding-top: 40px;
+  
         padding-bottom: 120px;
     }
 }
 .advantages__card {
     max-width: 230px;
-    margin-bottom: 25px;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
 
 @include for-size (tablet) {
         max-width: 190px;
         margin-bottom: 0;
+        &:nth-child(-n+3) {
+            margin-bottom: 0;
+        }
     }
 @include for-size (desktop) {
         max-width: 390px;
-        margin-bottom: 0;
+
         
         &:not(:last-child) {
             margin-right: 50px;
@@ -43,7 +47,7 @@
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+
 
     color: $color-hover;
 
