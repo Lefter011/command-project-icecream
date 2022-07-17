@@ -18,8 +18,10 @@
 }
 .advantages__card {
     max-width: 230px;
+    margin-bottom: 0px;
+
     &:not(:last-child) {
-        margin-bottom: 32px;
+        margin-bottom: 25px;
     }
 
 @include for-size (tablet) {

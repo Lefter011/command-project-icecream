@@ -3,8 +3,21 @@
 }
 
 .container-footer {
-  padding-top: 664px;
-  margin-top: -544px;
+  padding-top: 1144px;
+  margin-top: -1024px;
+  max-width: 320px;
+
+  @media (min-width: 768px) {
+    padding-top: 374px;
+    margin-top: -254px;
+    min-width: 768px;
+  }
+    
+  @media (min-width: 1200px) {
+    padding-top: 664px;
+    margin-top: -544px;
+    max-width: 1200px;
+  }
 }
 
 .footer-flex {

@@ -9,16 +9,16 @@
   align-items: center;
 }
 .contacts__card {
-  @media screen and (min-width: 320px) {
-  margin-left: 16px;
-  margin-right: 16px;  
-  }
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 1 * 16px) / 3);
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 0;
+    max-width: 224px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 368px;
   }
 
   background-color: $color-white;
@@ -30,9 +30,7 @@
 .contacts__card--item {
   padding-top: 24px;
 }
-.contacts__block--first {
-  width: 205px;
-}
+
 .contacts__block {
   border-bottom: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
