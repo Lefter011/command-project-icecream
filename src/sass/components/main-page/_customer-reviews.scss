@@ -54,7 +54,7 @@
   height: 12px;
   width: 12px;
   margin: 0 2px;
-  background-color: #ddd;
+  background-color: rgb(151, 117, 148);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -62,7 +62,7 @@
 
 .active,
 .slider-dots_item:hover {
-  background-color: #aaa;
+  background-color: rgb(184, 84, 170);
 }
 
 .slider .reviews-item {
