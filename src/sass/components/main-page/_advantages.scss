@@ -10,7 +10,7 @@
     @include for-size (tablet) {
         padding-top: 60px;
         padding-bottom: 60px;
-        display: flex;
+        // display: flex;
         flex-direction: row;
         justify-content: left;
     }
@@ -62,8 +62,12 @@
         line-height: 1.14;
         margin-bottom: 16px;
     }
-
+    // &:hover {
+    //     transform: scale(1.2);
+    //     color: tomato;
+    // }        
 }
+
 .card-title-1::before {
     content: "";
     display: block;
