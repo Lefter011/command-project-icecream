@@ -1,3 +1,6 @@
+.about{
+    background-color: $color-footer;
+}
 .container-center{
     position: relative;
     padding-left: 15px;
@@ -5,17 +8,19 @@
 
     margin-left: auto;
     margin-right: auto;
-    background-color: $color-footer;
     overflow: hidden;
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         min-width: 320px;
-        width: 100%;
+        // width: 100%;
         height: 925px;
         padding-top: 60px;
         padding-bottom: 40px;
         padding-left: 20px;
         padding-right: 20px;
+        .about-section{
+            width: 100%;
+        }
         .about-content{
             display: flex;
             justify-content: center;
@@ -78,10 +83,8 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
-        width: 100%;
-        height: 619px;
+        width: 768px;
         .about-content{
-            width: 768px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -144,8 +147,7 @@
     @media screen and (min-width: 1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
-        width: 100%;
-        height: 797px;
+        width: 1200px;
         .about-content{
             display: flex;
             justify-content: center;
