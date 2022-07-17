@@ -26,6 +26,10 @@ img {
     height: auto;
 }
 
+li, ol {
+    list-style: none;
+}
+
 .container-center {
     padding-left: 15px;
     padding-right: 15px;
@@ -63,4 +67,10 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+#scrollbar {
+    width: auto;
+    height: 100vh;
+    overflow: auto;
 }
