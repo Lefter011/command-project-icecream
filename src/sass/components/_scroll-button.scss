@@ -1,0 +1,39 @@
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: $color-hover;
+  color: $color-white;
+  animation: scroll-top 1000ms linear infinite alternate;
+  transition-property: color, background-color, border;
+  @extend %animation;
+  @include for-size(tablet) {
+    height: 40px;
+    width: 40px;
+  }
+
+  &:hover,
+  :focus {
+    background-color: $color-white;
+    color: $color-hover;
+    border: 1px solid $color-hover;
+  }
+}
+@keyframes scroll-top {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+.scroll-top__icon {
+  fill: currentColor;
+}

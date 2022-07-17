@@ -1,0 +1,248 @@
+.gallery-section {
+  padding-bottom: 80px;
+  background-image: linear-gradient(to top, #fff 87%, #fff5f6 13%);
+  @media screen and (min-width: 768px) {
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 137px;
+  }
+}
+
+.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 320px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list-one,
+  &__list-two,
+  &__list-three,
+  &__list-four,
+  &__list-five {
+    margin-right: 2px;
+    @media screen and (min-width: 768px) {
+      margin-right: 4px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 7px;
+    }
+  }
+
+  &__list-four {
+    margin-top: 10px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__list-five {
+    margin-bottom: 35px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 45px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__image-five {
+    max-width: 44px;
+    @media screen and (min-width: 768px) {
+      max-width: 105px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 163px;
+    }
+  }
+
+  &__image-one,
+  &__image-two,
+  &__image-three,
+  &__image-four,
+  &__image-five,
+  &__image-six,
+  &__image-seven,
+  &__image-eight,
+  &__image-nine,
+  &__image-ten {
+    overflow: hidden;
+    border-radius: 8px;
+    transform: scale(1) translateX(0);
+    transition: transform 250ms ease-in-out;
+    @media screen and (min-width: 320px) {
+      border-radius: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      border-radius: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      border-radius: 22px;
+    }
+  }
+
+  &__image-one:hover,
+  &__image-one:focus {
+    cursor: pointer;
+    transform: scale(1.3) translateX(-8px);
+
+    @media screen and (min-width: 320px) {
+      transform: scale(1.3) translateX(-12px);
+    }
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(-15px);
+    }
+  }
+  &__image-two:hover,
+  &__image-two:focus {
+    cursor: pointer;
+    transform: scale(1.3) translate(-8px, -8px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(-10px, -10px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translate(-15px, -15px);
+    }
+  }
+  &__image-three:hover,
+  &__image-three:focus {
+    cursor: pointer;
+    transform: scale(1.3) translate(-8px, 8px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(-10px, 10px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translate(-20px, -20px);
+    }
+  }
+  &__image-four:hover,
+  &__image-four:focus {
+    cursor: pointer;
+    transform: scale(1.3) translate(-15px, -15px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(-22px, -22px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translate(-30px, -30px);
+    }
+  }
+  &__image-five:hover,
+  &__image-five:focus {
+    cursor: pointer;
+    transform: scale(1.3) translateX(10px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translateX(17px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translateX(20px);
+    }
+  }
+  &__image-six:hover,
+  &__image-six:focus {
+    cursor: pointer;
+    transform: scale(1.3) translate(-8px, -8px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(-10px, -10px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translate(-15px, -15px);
+    }
+  }
+  &__image-seven:hover,
+  &__image-seven:focus {
+    cursor: pointer;
+    transform: scale(1.3) translateX(-8px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translateX(-10px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translateX(-15px);
+    }
+  }
+  &__image-eight:hover,
+  &__image-eight:focus {
+    cursor: pointer;
+    transform: scale(1.3) translate(-8px, -8px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(-10px, -10px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translate(-15px, -15px);
+    }
+  }
+  &__image-nine:hover,
+  &__image-nine:focus {
+    cursor: pointer;
+    transform: scale(1.3) translate(-8px, 8px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(-10px, 10px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translate(-15px, 15px);
+    }
+  }
+  &__image-ten:hover,
+  &__image-ten:focus {
+    cursor: pointer;
+    transform: scale(1.3) translate(8px);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.3) translate(12px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: scale(1.3) translate(15px);
+    }
+  }
+
+  &__image-three,
+  &__image-five,
+  &__image-seven,
+  &__image-nine {
+    margin-top: 2px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 4px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 7px;
+    }
+  }
+}
