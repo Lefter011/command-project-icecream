@@ -1,5 +1,3 @@
-console.log("helloworld!");
-
 let slideIndex = 1;
 showSlides(slideIndex);
 

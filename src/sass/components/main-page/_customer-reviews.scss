@@ -1,55 +1,16 @@
-.reviews-container {
-  max-width: 1200px;
-  padding-top: 60px;
+.reviews {
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 
 .slider {  
   position: relative;
   margin: auto;
   min-height: 300px; 
-  margin-bottom: 15px;
+  margin: auto;
 }
 
 .reviews-item {
   display: none;
-}
-
-.prev,
-.next {  
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slider-dots {
@@ -61,23 +22,16 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: $color-slider;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active,
-.dot:hover {
-  background-color: #717171;
+.slider-dots_item:hover {
+  background-color: $color-hover;
 }
-
-// .slider .reviews-item {
-//   -webkit-animation-name: fade;
-//   -webkit-animation-duration: 1.5s;
-//   animation-name: fade;
-//   animation-duration: 1.5s;
-// }
 
 .fade {
   animation-name: fade;
@@ -111,6 +65,7 @@
 }
 
 .reviews-item_text--container {
+  background-color: $color-reviews;
   padding: 32px 72px;
 }
 
@@ -128,8 +83,7 @@
 
 
 .reviews-item_text-desc { 
-  // background: repeating-linear-gradient(#ffffffff, #ffffffff 32px, #E1E1E1 33px, #E1E1E1 34px);
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid $color-border;
   justify-content: center;
   text-align: center;
   @media screen and (min-width: 1200px) {
@@ -145,8 +99,6 @@
   font-size: 12px;
   line-height: 2.7;
   letter-spacing: 0.04em;
-  color: #000000;
-
 }
 
 .reviews-item_author--container {
@@ -173,15 +125,9 @@
 }
 
 .reviews-item_author { 
-  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.86;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #000000;
 }
-
-
- 
-
