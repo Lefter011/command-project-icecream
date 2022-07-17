@@ -1,25 +1,31 @@
 .reviews-container {
+  max-width: 1200px;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+     
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 
 }
 
-.slider {
-  max-width: 90%;
+.slider {  
   position: relative;
   margin: auto;
-  height: 300px;
+  min-height: 300px; 
   margin-bottom: 15px;
 }
 
 
 
-.slider .prev, .slider .next {
-  display: none;
+.slider .prev, .slider .next {  
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -94,28 +100,19 @@
   margin-bottom: 30px;
 }
 
-.reviews-item_text-desc {
-background: repeating-linear-gradient(#ffffffff, #ffffffff 34px, #E1E1E1 35px, #E1E1E1 36px);
-  margin-left: auto;  
-  margin-right: auto;
-  justify-content: center;
-  text-align: center;
-width: 800px;
-font-weight: 500;
-font-size: 14px;
-line-height: 2.16;
-letter-spacing: 0.04em;
-color: #000000;
-}
-
 .reviews-item_text {
+  
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 margin-bottom: 30px;
 }
 
 .reviews-item_text::after {  
   content: ""; 
-  margin-left: 49%;
+  margin-left: 50%;
   width: 32px;
   height: 4px;  
   background-size: contain;
@@ -128,9 +125,12 @@ margin-bottom: 30px;
 }
 
 .reviews-item_text-desc::before {
-  content: "";  
-  width: 43px;
-  height: 32px;
+  content: "";
+  margin-top: auto; 
+  justify-content: center;
+  text-align: center;
+    width: 46px;
+  height: 34px;
   background-size: contain;
   display: inline-block;
  background-image: url(../images/reviews/“.png);
@@ -139,8 +139,32 @@ margin-bottom: 30px;
 }
 
 
+.reviews-item_text-desc { 
+background: repeating-linear-gradient(#ffffffff, #ffffffff 32px, #E1E1E1 33px, #E1E1E1 34px);
+  margin-left: auto;  
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  line-height: 1.9;
+  }
 
-.reviews-item_author {
+@media screen and (min-width: 768px) {
+  font-size: 14px;
+line-height: 2.2;
+}
+font-weight: 500;
+font-size: 12px;
+line-height: 2.7;
+letter-spacing: 0.04em;
+color: #000000;
+}
+
+
+
+
+.reviews-item_author { 
   margin-bottom: 30px;
   margin-left: auto;  
   margin-right: auto; 
