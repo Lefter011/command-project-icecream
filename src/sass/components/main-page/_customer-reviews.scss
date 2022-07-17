@@ -9,11 +9,10 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-     
+  
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
-
 }
 
 .slider {  
@@ -23,26 +22,34 @@
   margin-bottom: 15px;
 }
 
+.reviews-item {
+  display: none;
+}
 
-
-.slider .prev, .slider .next {  
+.prev,
+.next {  
   cursor: pointer;
   position: absolute;
-  top: 0;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.slider .next {
+.next {
   right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slider-dots {
@@ -51,35 +58,30 @@
 
 .slider-dots_item {
   cursor: pointer;
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
   margin: 0 2px;
-  background-color: rgb(151, 117, 148);
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active,
-.slider-dots_item:hover {
-  background-color: rgb(184, 84, 170);
+.dot:hover {
+  background-color: #717171;
 }
 
-.slider .reviews-item {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+// .slider .reviews-item {
+//   -webkit-animation-name: fade;
+//   -webkit-animation-duration: 1.5s;
+//   animation-name: fade;
+//   animation-duration: 1.5s;
+// }
+
+.fade {
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
 }
 
 @keyframes fade {
@@ -92,7 +94,6 @@
   
 }
 
-
 .reviews-item_foto {
   margin-left: auto;
   margin-right: auto;
@@ -101,79 +102,84 @@
 }
 
 .reviews-item_text {
-  
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-margin-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.reviews-item_text::after {  
-  content: ""; 
-  margin-left: 50%;
-  width: 32px;
-  height: 4px;  
-  background-size: contain;
-  display: inline-block;
- background-image: url(../images/reviews/ellipse.png), url(../images/reviews/ellipse.png), url(../images/reviews/ellipse.png); 
- background-size: 4px, 4px, 4px;
-  background-repeat: no-repeat;
-  background-position: top 0 right 0, top 0 left 0, top 0 center;
-   
+.reviews-item_text--container {
+  padding: 32px 72px;
 }
 
-.reviews-item_text-desc::before {
+.reviews-item_text-desc:first-child::before {
   content: "";
   margin-top: auto; 
   justify-content: center;
   text-align: center;
-    width: 46px;
+  width: 46px;
   height: 34px;
   background-size: contain;
   display: inline-block;
- background-image: url(../images/reviews/“.png);
- 
-
+  background-image: url(../images/reviews/“.png);
 }
 
 
 .reviews-item_text-desc { 
-background: repeating-linear-gradient(#ffffffff, #ffffffff 32px, #E1E1E1 33px, #E1E1E1 34px);
-  margin-left: auto;  
-  margin-right: auto;
+  // background: repeating-linear-gradient(#ffffffff, #ffffffff 32px, #E1E1E1 33px, #E1E1E1 34px);
+  border-bottom: 1px solid #E1E1E1;
   justify-content: center;
   text-align: center;
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-  line-height: 1.9;
+    line-height: 1.9;
   }
 
-@media screen and (min-width: 768px) {
-  font-size: 14px;
-line-height: 2.2;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.2;
+  }
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.7;
+  letter-spacing: 0.04em;
+  color: #000000;
+
 }
-font-weight: 500;
-font-size: 12px;
-line-height: 2.7;
-letter-spacing: 0.04em;
-color: #000000;
+
+.reviews-item_author--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 
-
+.reviews-item--dot {
+  content: "";
+  width: 32px;
+  height: 4px;
+  text-align: center;
+  background-size: contain;
+  display: inline-block;
+  background-image: url(../images/reviews/ellipse.png), url(../images/reviews/ellipse.png), url(../images/reviews/ellipse.png);
+  background-size: 4px, 4px, 4px;
+  background-repeat: no-repeat;
+  background-position: top 0 right 0, top 0 left 0, top 0 center;
+  margin-bottom: 16px;
+}
 
 .reviews-item_author { 
-  margin-bottom: 30px;
-  margin-left: auto;  
-  margin-right: auto; 
-font-weight: 500;
-font-size: 16px;
-line-height: 1.86;
-text-align: center;
-letter-spacing: 0.04em;
-color: #000000;
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
 }
 
 
