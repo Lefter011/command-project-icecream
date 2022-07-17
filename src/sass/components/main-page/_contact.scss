@@ -24,7 +24,6 @@
   background-color: $color-white;
   margin-bottom: 20px;
   height: auto;
-  // border: 1px solid #e1e1e1;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
@@ -213,13 +212,21 @@
   border-radius: 22px;
 
   @extend %displayFlexCenter;
-
-  &:active, &:hover, &:focus {
-    background-color: $color-hover;
-    color: $color-white;
-    @extend %animation;
-  }
 }
+
+.contacts__btn--passive-hover {
+  background-color: $color-hover;
+  color: $color-white;
+}
+
+.contacts__btn--active-hover:active, 
+.contacts__btn--active-hover:hover, 
+.contacts__btn--active-hover:focus {
+  background-color: $color-button;
+  @extend %animation;
+}
+
+
 
 .contacts__btn--item:not(:last-child) {
   margin-right: 15px;
