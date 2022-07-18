@@ -84,13 +84,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 184, 202, 0.8);
+  background-color: rgb(255, 184, 202);
   padding: 5px 0;
   @extend %animation;
-
-  @media screen and (min-width: 1200px) {
-    & a {
-        color: $color-black;
-      }
-  }
 }
