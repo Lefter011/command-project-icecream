@@ -52,8 +52,10 @@
     justify-content: center;
     align-items: center;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     gap: 16px;
   }
 
@@ -90,6 +92,10 @@
   &:nth-child(1) {
     background-color: $color-primary;
     margin-bottom: 140px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
 
     &::before {
       content: '';
@@ -129,6 +135,10 @@
     background-color: $color-cafe;
     margin-bottom: 140px;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+    
     &::before {
       content: '';
       background-image: url(..//images/product/products-2_mob-1x.png);
@@ -284,7 +294,7 @@
   }
 
   &::before {
-    content: '🡪';
+    content: '\279C';
     color: $color-hover;
     transform: rotate(0);
   }
