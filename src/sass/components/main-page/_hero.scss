@@ -167,6 +167,8 @@ z-index: 3;
         width: 83px;
         color: #D41443;
         background-color: #fff;
+        @extend %animation;
+        transition-property: background-color;
         @media screen and (min-width: 1200px) {
                 width: 138px;
                 font-size: 14px;
@@ -266,16 +268,31 @@ bottom: 16px;
 }
 .hero__btn--arrow {
     background-color: #FFFFFF;
+    @extend %animation;
+    transition-property: background-color;
     fill: #D41443;
     border-radius: 50%;
     cursor: pointer;
     border: none;
     margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover, &:focus{
+        background-color: #ECEBEB;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 18px;
+        height: 18px;
+        font-size: 0.6rem;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 26px;
         height: 26px;
         margin-top: 20px;
+        font-size: 0.8rem;
     }
 
     &::before {

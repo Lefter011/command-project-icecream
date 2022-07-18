@@ -2,35 +2,38 @@
     background-color: $color-footer;
 }
 .advatages__list {
-    padding-top: 40px;
     padding-bottom: 60px;
     @extend %displayFlexCenter;
     flex-direction: column;
 
     @include for-size (tablet) {
-        padding-top: 60px;
         padding-bottom: 60px;
-        display: flex;
         flex-direction: row;
         justify-content: left;
     }
 
     @include for-size (desktop) {
-        padding-top: 40px;
         padding-bottom: 120px;
     }
 }
 .advantages__card {
     max-width: 230px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
 
 @include for-size (tablet) {
         max-width: 190px;
         margin-bottom: 0;
+        &:nth-child(-n+3) {
+            margin-bottom: 0;
+        }
     }
 @include for-size (desktop) {
         max-width: 390px;
-        margin-bottom: 0;
+
         
         &:not(:last-child) {
             margin-right: 50px;
@@ -52,6 +55,7 @@
     margin-bottom: 4px;
 
     @include for-size (tablet) {
+        text-transform:none;
         font-size: 48px;
         line-height: 1.15;
         margin-bottom: 13px;
@@ -61,16 +65,16 @@
         font-size: 58px;
         line-height: 1.14;
         margin-bottom: 16px;
-    }
-
+    }    
 }
+
 .card-title-1::before {
     content: "";
     display: block;
     width: 33px;
     height: 50px;
 
-    background-image: url("/src/images/svg/advantages/logo-1.png");
+    background-image: url("/src/images/advantages/logo-1.png");
 
 }
 .card-title-2::before {
@@ -79,7 +83,7 @@
     width: 50px;
     height: 50px;
 
-    background-image: url("/src/images/svg/advantages/logo-2.png");
+    background-image: url("/src/images/advantages/logo-2.png");
 }
 .card-title-3::before {
     content: "";
@@ -87,7 +91,7 @@
     width: 45.5px;
     height: 50px;
 
-    background-image: url("/src/images/svg/advantages/logo-3.png");
+    background-image: url("/src/images/advantages/logo-3.png");
 }
 .advantages__card-title::before {
     margin-bottom: 16px;
