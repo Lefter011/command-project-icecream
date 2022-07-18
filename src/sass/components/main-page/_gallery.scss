@@ -1,5 +1,6 @@
 .gallery-section {
   padding-bottom: 80px;
+
   background: rgb(255, 245, 246);
   background: linear-gradient(
     180deg,
@@ -60,7 +61,7 @@
   }
 
   &__list-five {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     @media screen and (min-width: 768px) {
       margin-bottom: 45px;
     }
@@ -71,7 +72,7 @@
   }
 
   &__image-five {
-    max-width: 65px;
+    max-width: 40px;
     @media screen and (min-width: 768px) {
       max-width: 105px;
     }
