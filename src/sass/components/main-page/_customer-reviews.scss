@@ -78,7 +78,16 @@
 .reviews-item_text--container {
   display: flex;
   background-color: $color-reviews;
-  padding: 32px 72px;
+  padding: 40px 60px 26px 60px;
+  
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 10px 36px 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 72px;
+  }
 }
 
 .reviews-item_text-desc:first-child::before {
@@ -98,18 +107,18 @@
 }
 
 .reviews-item_text-desc {
-  width: 280px;
+  width: 180px;
   margin-top: -15px;
   justify-content: center;
   text-align: center;
   @media screen and (min-width: 1200px) {
-    width: 968px;
+    width: 822px;
     font-size: 16px;
     line-height: 1.9;
   }
 
   @media screen and (min-width: 768px) {
-    width: 620px;
+    width: 610px;
     font-size: 14px;
     line-height: 2.2;
   }

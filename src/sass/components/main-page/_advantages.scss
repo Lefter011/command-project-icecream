@@ -1,10 +1,22 @@
 .advantages {
     background-color: $color-footer;
 }
+
+.advatages__container{
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include for-size (tablet) {
+        max-width: 100%;
+    }
+}
+
 .advatages__list {
     padding-bottom: 60px;
     @extend %displayFlexCenter;
     flex-direction: column;
+    align-items: flex-start;
 
     @include for-size (tablet) {
         padding-bottom: 60px;
