@@ -1,4 +1,27 @@
 <section class="about" id="about">
+  <div class="container-img__pic-2">
+    <picture class="container-img__milk">
+      <source
+        media="(min-width: 320px)"
+        srcset="
+          ./images/about/milk-mob-x1.png 1x,
+          ./images/about/milk-mob-x2.png 2x
+        "
+        type="images/png"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="./images/about/milk-x1.png 1x, ./images/about/milk-x2.png 2x"
+        type="images/png"
+      />
+      <img
+        src="./images/about/milk-x2.png"
+        alt=""
+        class="container-img__milk-img"
+        loading="lazy"
+      />
+    </picture>
+  </div>
   <div class="container-center">
     <div class="about-section">
       <a class="about-section__logo link" href="">tradition and love</a>
@@ -35,31 +58,6 @@
                 src="./images/about/cow-x1.png"
                 alt="cow"
                 class="container-img__cow-img"
-              />
-            </picture>
-          </div>
-          <div class="container-img__pic-2">
-            <picture class="container-img__milk">
-              <source
-                media="(min-width: 320px)"
-                srcset="
-                  ./images/about/milk-mob-x1.png 1x,
-                  ./images/about/milk-mob-x2.png 2x
-                "
-                type="images/png"
-              />
-              <source
-                media="(min-width: 1200px)"
-                srcset="
-                  ./images/about/milk-x1.png 1x,
-                  ./images/about/milk-x2.png 2x
-                "
-                type="images/png"
-              />
-              <img
-                src="./images/about/milk-x1.png"
-                alt=""
-                class="container-img__milk-img"
               />
             </picture>
           </div>
