@@ -3,7 +3,7 @@
 }
 
 .slider-reviews {  
-  position: relative;
+ 
   margin: auto;
   min-height: 300px; 
   margin: auto;
@@ -25,8 +25,7 @@
 
   &:first-child {
     fill: $color-slider;
-    // width: 14px;
-    // height: 14px;
+    
   }
 
   &:nth-child(n+2) {
@@ -67,60 +66,66 @@
 }
 
 .reviews-item_text {
-  position: relative;
+  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   display: flex;
-  justify-content: center;
-}
-
-.reviews-item_text--container {
-  display: flex;
+  justify-content: center;  
   background-color: $color-reviews;
-  padding: 40px 60px 26px 60px;
+  padding: 30px 50px;
   
 
   @media screen and (min-width: 768px) {
-    padding: 20px 10px 36px 10px;
+    @media screen and (max-width: 1198px) {
+      max-width: 620px;
+    padding: 30px 50px;
+    }    
   }
-
   @media screen and (min-width: 1200px) {
-    padding: 32px 72px;
+    max-width: 950px;
+    padding: 30px 80px;
   }
 }
+
+
 
 .reviews-item_text-desc:first-child::before {
   content: "";
-  margin-top: auto; 
+  position: absolute;
+  top: -18px;
+  left: -30px;
   justify-content: center;
   text-align: center;
-  width: 46px;
-  height: 34px;
+  width: 54px;
+  height: 40px;
   background-size: contain;
   display: inline-block;
   background-image: url(../images/reviews/“.png);
+  opacity: 0.6;
 }
 
-.reviews-item__border {
-  background-image: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 29px, #E1E1E1 29px, #E1E1E1 30px);
-}
+
 
 .reviews-item_text-desc {
-  width: 180px;
+  position: relative;
+  background-image: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 29px, #E1E1E1 29px, #E1E1E1 30px);
+ 
   margin-top: -15px;
   justify-content: center;
   text-align: center;
   @media screen and (min-width: 1200px) {
-    width: 822px;
+  
     font-size: 16px;
     line-height: 1.9;
   }
 
   @media screen and (min-width: 768px) {
-    width: 610px;
-    font-size: 14px;
-    line-height: 2.2;
+    @media screen and (max-width: 1198px) {
+     
+      font-size: 14px;
+      line-height: 2.2;}
+    
   }
   font-weight: 500;
   font-size: 12px;
