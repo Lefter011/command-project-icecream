@@ -15,6 +15,12 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
+  const toggleMenuClose = () => {
+    openMenuBtn.setAttribute('aria-expanded', false);
+    mobileMenu.classList.remove('is-open');
+    bodyScrollLock.enableBodyScroll(document.body);
+  }
+
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
@@ -27,3 +33,7 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+$('.nav-list__link').click(function() {
+    $('.menu-wrap').removeClass('is-open');
+});
