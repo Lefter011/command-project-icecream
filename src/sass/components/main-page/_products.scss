@@ -73,7 +73,8 @@
   position: relative;
   border-radius: 24px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::before {
       transform: translateY(-20px) scale(1.1);
     }
@@ -81,11 +82,13 @@
 
   @media screen and (min-width: 768px) {
     width: 224px;
+    flex-basis: calc((100% - 48px) / 3);
     padding-top: 90px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 368px;
+    flex-basis: calc((100% - 96px) / 3);
     padding-top: 140px;
   }
 
@@ -138,7 +141,7 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 0px;
     }
-    
+
     &::before {
       content: '';
       background-image: url(..//images/product/products-2_mob-1x.png);
@@ -265,6 +268,15 @@
   transform: translate(0) rotate(0);
   @extend %animation;
 
+  &:active {
+    transform: translateY(-20px) translateX(20px) rotate(270deg);
+    @media screen and (min-width: 1200px) {
+      transform: translateY(-30px) translateX(30px) rotate(270deg);
+    }
+  }
+
+  // ___js___
+
   &.active {
     &__cream,
     &__coffee,
@@ -285,6 +297,7 @@
   border: none;
   background-color: $color-white;
   margin-bottom: 40px;
+  cursor: pointer;
   @extend %animation;
 
   &:active,
@@ -316,7 +329,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 13px;
-    line-height: 176%;
+    line-height: 170%;
     margin: 25px 32px 32px 32px;
   }
 
