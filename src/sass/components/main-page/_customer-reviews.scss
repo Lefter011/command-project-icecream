@@ -19,17 +19,29 @@
 
 .slider-dots_item {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
   margin: 0 2px;
-  background-color: $color-slider;
-  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+
+  &:first-child {
+    fill: $color-slider;
+    // width: 14px;
+    // height: 14px;
+  }
+
+  &:nth-child(n+2) {
+    background-color: $color-slider;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
 }
 
-.active,
-.slider-dots_item:hover {
+.active:first-child {
+  fill: $color-hover;
+}
+
+.active:nth-child(n+2) {
   background-color: $color-hover;
 }
 
