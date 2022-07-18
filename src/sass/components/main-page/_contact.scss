@@ -191,10 +191,12 @@
   align-items: center;
   border-radius: 22px;
 
-
   background-color: $color-white;
   margin-bottom: 10px;
   
+  @media screen and (max-width: 767px) {
+    width: 164px;
+  }
 }
 
 .contacts__btn--link {
@@ -205,16 +207,23 @@
   line-height: 1.31;
 
   color: $color-hover;
-  padding: 0 35px;
+  padding: 0 17px;
   height: 44px;
   border-radius: 22px;
+
+  @media screen and (min-width: 768px) {
+      padding: 0 35px;
+    }
 
   @extend %displayFlexCenter;
 }
 
 .contacts__btn--passive-hover {
   background-color: $color-hover;
-  color: $color-white;
+
+  & > a {
+    color: $color-white;
+  }
 }
 
 .contacts__btn--active-hover:active, 
@@ -235,9 +244,13 @@
 }
 
 .contacts__svg {
-  margin-left: 12px;
+  margin-left: 8px;
   fill: currentColor;
   stroke: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 12px;
+  }
 }
 
 
