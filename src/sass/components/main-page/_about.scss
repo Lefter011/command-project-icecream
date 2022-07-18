@@ -135,7 +135,8 @@
     @media screen and (min-width: 1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
-        // width: 1200px;
+        display: flex;
+        justify-content: center;
         .about-content{
             display: flex;
             justify-content: center;
