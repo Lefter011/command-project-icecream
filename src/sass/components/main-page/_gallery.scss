@@ -1,6 +1,7 @@
 .gallery-section {
   padding-bottom: 80px;
-  background-image: linear-gradient(#fff5f6 30%, #fff 3%);
+  background: rgb(255, 245, 246);
+  background: linear-gradient(180deg, rgba(255, 245, 246, 1) 30%, rgba(255, 255, 255, 1) 30%);
   @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
