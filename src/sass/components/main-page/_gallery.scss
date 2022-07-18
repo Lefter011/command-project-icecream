@@ -11,17 +11,6 @@
 }
 
 .gallery {
-  // margin-left: auto;
-  // margin-right: auto;
-  // padding: 0 15px;
-  // max-width: 320px;
-
-  // @media screen and (min-width: 768px) {
-  //   max-width: 768px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   max-width: 1200px;
-  // }
   &__wrapper {
     display: flex;
     align-items: center;
@@ -86,6 +75,7 @@
   &__image-eight,
   &__image-nine,
   &__image-ten {
+    width: 100%;
     overflow: hidden;
     border-radius: 8px;
     transform: scale(1) translateX(0);
