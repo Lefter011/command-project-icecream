@@ -85,12 +85,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgb(255, 184, 202);
-  background: linear-gradient(180deg, rgba(255, 184, 202, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  padding: 5px 0 20px 0;
+  background: rgba(255, 184, 202, 0.9);
+  padding: 5px 0 5px 0;
   @extend %animation;
-
-  & .nav-list__link {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-  }
 }
