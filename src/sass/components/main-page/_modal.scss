@@ -1,0 +1,266 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  overflow-y: scroll;
+  transition-property: opacity;
+  @extend %animation;
+  @media screen and (max-width: 767px) {
+    padding: 60px 10px;
+  }
+  &.backdrop--is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition-property: opacity, visibility;
+    @extend %animation;
+  }
+}
+
+.backdrop {
+  &.backdrop--is-hidden {
+    .modal-content {
+      @include for-size(tablet) {
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+    }
+  }
+}
+
+.modal-content {
+  position: relative;
+  min-width: 300px;
+
+  margin: 0 auto;
+  padding: 55px 10px;
+
+  // width: 100%;
+  background: $color-white;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition-property: transform;
+  @extend %animation;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    padding: 55px 20px;
+
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal-content__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: $color-hover;
+  border: 1px solid $color-hover;
+  transition-property: color, background-color;
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $color-hover;
+    color: $color-white;
+  }
+}
+
+.modal-content__icon {
+  fill: currentColor;
+}
+
+.feedback {
+  width: 100%;
+  margin: 0 auto;
+}
+.feedback__text {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: $color-hover;
+  @include for-size(tablet) {
+    font-size: 20px;
+  }
+}
+.feedback__label {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.feedback__input,
+.feedback__message {
+  width: 100%;
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  border: 1px solid $color-primary;
+  border-radius: 4px;
+  outline: none;
+  transition-property: border-color;
+  @extend %animation;
+}
+.feedback__input {
+  &:focus-within {
+    border-color: $color-hover;
+    outline: none;
+  }
+}
+.feedback__message {
+  &:focus-within {
+    border-color: $color-hover;
+    outline: none;
+  }
+  &::placeholder {
+    color: $color-primary;
+  }
+}
+
+.feedback__icon {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  fill: $color-primary;
+
+  transition-property: fill;
+  @extend %animation;
+}
+.feedback__input:focus-within {
+  & + .feedback__icon {
+    fill: $color-hover;
+  }
+}
+.feedback__part {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $color-hover;
+}
+.feedback__message {
+  margin-bottom: 20px;
+  resize: none;
+  width: 100%;
+  padding: 12px 5px;
+}
+
+.feedback__accord {
+  @extend %displayFlexCenter;
+  margin-bottom: 30px;
+}
+.form__checkbox {
+  display: inline-block;
+  margin: 0 auto;
+}
+.feedback__field {
+  display: inline-block;
+  max-width: 16px;
+  width: 100%;
+  height: 15px;
+  border: 2px solid $color-secondary;
+  border-radius: 2px;
+}
+.form__checkbox:checked {
+  & + .feedback__field {
+    background-color: $color-hover;
+    border-color: $color-hover;
+    background-image: url(../images/svg/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    background-position: center;
+  }
+}
+
+.feedback__consent {
+  margin: 0;
+
+  padding-left: 7px;
+  color: $color-hover;
+}
+.feedback__link {
+  text-decoration-line: underline;
+  font-weight: 900;
+
+  color: $color-hover;
+}
+.feedback__consent,
+.feedback__link {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.71;
+  }
+}
+.feedback__button {
+  width: 160px;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $color-hover;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  cursor: pointer;
+  background-color: $color-white;
+
+  color: $color-hover;
+  transition-property: color, background-color;
+
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+    cursor: pointer;
+  }
+}
