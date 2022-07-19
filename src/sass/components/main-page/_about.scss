@@ -4,7 +4,6 @@
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         min-width: 320px;
-        // width: 100%;
         height: 925px;
         padding-top: 60px;
         padding-bottom: 40px;
@@ -41,7 +40,6 @@
             margin-bottom: 111px;
         }
         .container-img__pic-2{
-            // width: 280px;
             position: absolute;
             top:600px;
         }
@@ -75,11 +73,6 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
-        // width: 768px;
-        // .about-content{
-        //     margin-left: auto;
-        //     margin-right: auto;
-        // }
         .about-section__logo{
             display: flex;
             justify-content: center;
@@ -196,7 +189,6 @@
         }
         .about-button{
             margin-left: auto;
-            // margin-right: 408px;
         }
     }
 }
@@ -239,9 +231,8 @@
     background-color: $color-white;
     color: $color-hover;
     transition-property: color, background-color;
-  
     @extend %animation;
-  
+
     &:hover,
     &:focus {
         background-color: $color-button;
